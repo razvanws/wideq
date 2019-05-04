@@ -14,8 +14,8 @@ GATEWAY_URL = 'https://kic.lgthinq.com:46030/api/common/gatewayUriList'
 APP_KEY = 'wideq'
 SECURITY_KEY = 'nuts_securitykey'
 DATA_ROOT = 'lgedmRoot'
-COUNTRY = 'KR'
-LANGUAGE = 'ko-KR'
+COUNTRY = 'RO'
+LANGUAGE = 'ro-RO'
 SVC_CODE = 'SVC202'
 CLIENT_ID = 'LGAO221A02'
 OAUTH_SECRET_KEY = 'c053c2a6ddeb7ad97cb0eed0dcb31cf8'
@@ -172,31 +172,36 @@ STATE_ERROR_EMPTYWATER = '물통 가득참 - 물통을 비워주세요'
 STATE_ERROR_CE1 = 'ERROR_CE1'
 STATE_NO_ERROR = '정상'
 
-STATE_OPTIONITEM_ON = '켜짐'
-STATE_OPTIONITEM_OFF = '꺼짐'
+STATE_OPTIONITEM_ON = 'On'
+STATE_OPTIONITEM_OFF = 'Off'
 
 """WASHER STATE"""
-STATE_WASHER_POWER_OFF = '꺼짐'
-STATE_WASHER_INITIAL = '코스선택'
-STATE_WASHER_PAUSE = '일시정지'
-STATE_WASHER_ERROR_AUTO_OFF = '에러_자동종료'
-STATE_WASHER_RESERVE = '예약중'
-STATE_WASHER_DETECTING = '세탁물 감지 중'
+STATE_WASHER_POWER_OFF = 'Off'
+STATE_WASHER_INITIAL = 'Select Course'
+STATE_WASHER_PAUSE = 'Paused'
+STATE_WASHER_ERROR_AUTO_OFF = 'Automatic Poweroff Error'
+STATE_WASHER_RESERVE = 'Reserved'
+STATE_WASHER_DETECTING = 'Detecting'
 STATE_WASHER_ADD_DRAIN = 'ADD_DRAIN'
-STATE_WASHER_DETERGENT_AMOUT = '세제량'
-STATE_WASHER_RUNNING = '세탁 중'
-STATE_WASHER_PREWASH = '애벌세탁 중'
-STATE_WASHER_RINSING = '헹굼 중'
-STATE_WASHER_RINSE_HOLD = '헹굼 대기'
-STATE_WASHER_SPINNING = '탈수 중'
-STATE_WASHER_DRYING = '건조 중'
-STATE_WASHER_END = '종료'
+STATE_WASHER_DETERGENT_AMOUT = 'Detergent Amount'
+STATE_WASHER_RUNNING = 'Washing'
+STATE_WASHER_PREWASH = 'Pre-Wash'
+STATE_WASHER_RINSING = 'Rinsing'
+STATE_WASHER_RINSE_HOLD = 'Rinsing [On Hold]'
+STATE_WASHER_SPINNING = 'Spinning'
+STATE_WASHER_DRYING = 'Drying'
+STATE_WASHER_END = 'End'
+STATE_WASHER_REFRESHWITHSTEAM = 'Refreshing with steam'
+STATE_WASHER_COOLDOWN = 'Cooldown'
+STATE_WASHER_STEAMSOFTENING = 'Using softener with steam'
+STATE_WASHER_ERRORSTATE = 'An error occured'
+STATE_WASHER_TCL_ALARM_NORMAL = 'Pipe Clogged'
+STATE_WASHER_FROZEN_PREVENT_INITIAL = 'Error during initialization'
+STATE_WASHER_FROZEN_PREVENT_RUNNING = 'Unfreezing system, please wait'
+STATE_WASHER_FROZEN_PREVENT_PAUSE = 'System is being unfrozen, you cannot pause this operation.'
+STATE_WASHER_ERROR = 'Error'
 STATE_WASHER_FRESHCARE = 'FreshCare'
-STATE_WASHER_TCL_ALARM_NORMAL = '통세척'
-STATE_WASHER_FROZEN_PREVENT_INITIAL = '동파방지_초기화'
-STATE_WASHER_FROZEN_PREVENT_RUNNING = '동파방지_동작중'
-STATE_WASHER_FROZEN_PREVENT_PAUSE = '동파방지_일시정지'
-STATE_WASHER_ERROR = '에러'
+
 
 STATE_WASHER_SOILLEVEL_LIGHT = '적은때'
 STATE_WASHER_SOILLEVEL_NORMAL = '표준'
@@ -204,7 +209,8 @@ STATE_WASHER_SOILLEVEL_HEAVY = '강력'
 STATE_WASHER_SOILLEVEL_PRE_WASH = '애벌세탁'
 STATE_WASHER_SOILLEVEL_SOAKING = '불림'
 
-STATE_WASHER_WATERTEMP_COLD = '냉수'
+STATE_WASHER_WATERTEMP_COLD = 'Cold'
+STATE_WASHER_WATERTEMP_20 = '20℃'
 STATE_WASHER_WATERTEMP_30 = '30℃'
 STATE_WASHER_WATERTEMP_40 = '40℃'
 STATE_WASHER_WATERTEMP_60 = '60℃'
@@ -215,6 +221,16 @@ STATE_WASHER_SPINSPEED_LOW = '약'
 STATE_WASHER_SPINSPEED_MEDIUM = '중'
 STATE_WASHER_SPINSPEED_HIGH = '강'
 STATE_WASHER_SPINSPEED_EXTRA_HIGH = '건조맞춤'
+
+STATE_WASHER_SPINSPEED_NOSPIN = 'No Spin'
+STATE_WASHER_SPINSPEED_400 = '400 RPM'
+STATE_WASHER_SPINSPEED_800 = '800 RPM'
+STATE_WASHER_SPINSPEED_1000 = '1000 RPM'
+STATE_WASHER_SPINSPEED_1200 = '1200 RPM'
+STATE_WASHER_SPINSPEED_1400 = '1400 RPM'
+
+STATE_WASHER_RINSE_NORMAL = "Normal"
+STATE_WASHER_EXTRA_RINSE = "Extra rinse"
 
 STATE_WASHER_RINSECOUNT_1 = '1회'
 STATE_WASHER_RINSECOUNT_2 = '2회'
@@ -230,24 +246,25 @@ STATE_WASHER_DRYLEVEL_TIME_90 = '시간건조_90분'
 STATE_WASHER_DRYLEVEL_TIME_120 = '시간건조_120분'
 STATE_WASHER_DRYLEVEL_TIME_150 = '시간건조_150분'
 
-STATE_WASHER_NO_ERROR = '정상'
-STATE_WASHER_ERROR_dE2 = '문열림 에러 - 문이 닫혔는지 확인하세요'
-STATE_WASHER_ERROR_IE = '급수안됨'
-STATE_WASHER_ERROR_OE = '배수안됨'
-STATE_WASHER_ERROR_UE = '세탁물 치우침'
-STATE_WASHER_ERROR_FE = 'FE - 서비스 센터에 문의하세요'
-STATE_WASHER_ERROR_PE = 'PE - 서비스 센터에 문의하세요'
-STATE_WASHER_ERROR_LE = 'LE - 서비스 센터에 문의하세요'
-STATE_WASHER_ERROR_tE = 'tE - 서비스 센터에 문의하세요'
-STATE_WASHER_ERROR_dHE = 'dHE - 서비스 센터에 문의하세요'
-STATE_WASHER_ERROR_CE = 'CE - 서비스 센터에 문의하세요'
-STATE_WASHER_ERROR_PF = 'PF - 서비스 센터에 문의하세요'
-STATE_WASHER_ERROR_FF = '제품 얼음'
-STATE_WASHER_ERROR_dCE = 'dCE - 서비스 센터에 문의하세요'
-STATE_WASHER_ERROR_EE = 'EE - 서비스 센터에 문의하세요'
-STATE_WASHER_ERROR_PS = 'PS - 서비스 센터에 문의하세요'
-STATE_WASHER_ERROR_dE1 = '문열림 에러 - 문이 닫혔는지 확인하세요'
-STATE_WASHER_ERROR_LOE = '세제통 문열림 에러 - 세제통 문이 닫혔는지 확인하세요'
+STATE_WASHER_NO_ERROR = 'Normal'
+STATE_WASHER_ERROR_dE2 = 'Door open - Please close the door'
+STATE_WASHER_ERROR_IE = 'No water - Please make sure the water has enough pressure to reach the washer.'
+STATE_WASHER_ERROR_OE = 'Drain error - Please make sure the pipe is not clogged/frozen'
+STATE_WASHER_ERROR_UE = 'Laundry trim'
+STATE_WASHER_ERROR_FE = 'FE - Contact Service Center'
+STATE_WASHER_ERROR_PE = 'PE - Contact Service Center'
+STATE_WASHER_ERROR_LE = 'LE - Contact Service Center'
+STATE_WASHER_ERROR_tE = 'tE - Contact Service Center'
+STATE_WASHER_ERROR_dHE = 'dHE - Contact Service Center'
+STATE_WASHER_ERROR_CE = 'CE - Contact Service Center'
+STATE_WASHER_ERROR_PF = 'PF - Contact Service Center'
+STATE_WASHER_ERROR_FF = 'The washer is frozen, please warm up the surrounding area.'
+STATE_WASHER_ERROR_dCE = 'dCE - Contact Service Center'
+STATE_WASHER_ERROR_EE = 'EE - Contact Service Center'
+STATE_WASHER_ERROR_PS = 'PS - Contact Service Center'
+STATE_WASHER_ERROR_dE1 = 'Door open - Please close the door'
+STATE_WASHER_ERROR_LOE = 'Detergent door is open - Please close the detergent door'
+STATE_NO_ERROR = 'Normal'
 
 STATE_WASHER_APCOURSE_COTTON = '표준세탁'
 STATE_WASHER_APCOURSE_SPEEDWASH_DRY = '스피드워시+건조'
@@ -266,26 +283,26 @@ STATE_WASHER_APCOURSE_COLDWASH = '찬물세탁'
 STATE_WASHER_APCOURSE_TUBCLEAN_SANITARY = '통살균'
 STATE_WASHER_APCOURSE_DOWNLOAD_COUSE = '다운로드코스'
 
-STATE_WASHER_SMARTCOURSE_SILENT = '조용조용'
-STATE_WASHER_SMARTCOURSE_SMALL_LOAD = '소량 세탁'
-STATE_WASHER_SMARTCOURSE_SKIN_CARE = '스킨 케어'
-STATE_WASHER_SMARTCOURSE_RAINY_SEASON = '장마철 세탁'
-STATE_WASHER_SMARTCOURSE_SWEAT_STAIN = '땀얼룩 제거'
-STATE_WASHER_SMARTCOURSE_SINGLE_GARMENT = '한벌 세탁'
-STATE_WASHER_SMARTCOURSE_SCHOOL_UNIFORM = '교복'
-STATE_WASHER_SMARTCOURSE_STATIC_REMOVAL = '정전기 제거'
-STATE_WASHER_SMARTCOURSE_COLOR_CARE = '컬러 케어'
-STATE_WASHER_SMARTCOURSE_SPIN_ONLY = '탈수 전용'
-STATE_WASHER_SMARTCOURSE_DEODORIZATION = '냄새 제거'
-STATE_WASHER_SMARTCOURSE_BEDDING_CARE = '침구 케어'
-STATE_WASHER_SMARTCOURSE_CLOTH_CARE = '옷감 보호'
-STATE_WASHER_SMARTCOURSE_SMART_RINSE = '안심 헹굼'
-STATE_WASHER_SMARTCOURSE_ECO_WASH = '알뜰 세탁'
+STATE_WASHER_SMARTCOURSE_SILENT = 'Silent'
+STATE_WASHER_SMARTCOURSE_SMALL_LOAD = 'Small Load'
+STATE_WASHER_SMARTCOURSE_SKIN_CARE = 'Skin Care'
+STATE_WASHER_SMARTCOURSE_RAINY_SEASON = 'Rainy Season'
+STATE_WASHER_SMARTCOURSE_SWEAT_STAIN = 'Sweat/Stains Removal'
+STATE_WASHER_SMARTCOURSE_SINGLE_GARMENT = 'Single Garment'
+STATE_WASHER_SMARTCOURSE_SCHOOL_UNIFORM = 'School Uniform'
+STATE_WASHER_SMARTCOURSE_STATIC_REMOVAL = 'Static Removal'
+STATE_WASHER_SMARTCOURSE_COLOR_CARE = 'Color Care'
+STATE_WASHER_SMARTCOURSE_SPIN_ONLY = 'Spin Only'
+STATE_WASHER_SMARTCOURSE_DEODORIZATION = 'Deodorization'
+STATE_WASHER_SMARTCOURSE_BEDDING_CARE = 'Bedding Care'
+STATE_WASHER_SMARTCOURSE_CLOTH_CARE = 'Cloth Care'
+STATE_WASHER_SMARTCOURSE_SMART_RINSE = 'Smart Rinse'
+STATE_WASHER_SMARTCOURSE_ECO_WASH = 'Economy Wash'
 
-STATE_WASHER_TERM_NO_SELECT = '선택 안함'
+STATE_WASHER_TERM_NO_SELECT = 'Nothing selected yet'
 
-STATE_WASHER_OPTIONITEM_ON = '켜짐'
-STATE_WASHER_OPTIONITEM_OFF = '꺼짐'
+STATE_WASHER_OPTIONITEM_ON = 'On'
+STATE_WASHER_OPTIONITEM_OFF = 'Off'
 
 """DEHUMIDIFIER STATE"""
 STATE_DEHUM_ON = '동작 중'
@@ -2327,20 +2344,33 @@ class WASHERSOILLEVEL(enum.Enum):
 class WASHERWATERTEMP(enum.Enum):
     
     NO_SELECT = "@WM_TERM_NO_SELECT_W"
-    COLD = "@WM_KR_TT27_WD_WIFI_OPTION_WATERTEMP_COLD_W"
-    THIRTY = "@WM_KR_TT27_WD_WIFI_OPTION_WATERTEMP_30_W"
-    FOURTY = "@WM_KR_TT27_WD_WIFI_OPTION_WATERTEMP_40_W"
-    SIXTY = "@WM_KR_TT27_WD_WIFI_OPTION_WATERTEMP_60_W"
-    NINTYFIVE = "@WM_KR_TT27_WD_WIFI_OPTION_WATERTEMP_95_W"
+    COLD = "@WM_TITAN2_OPTION_TEMP_COLD_W"
+    TWENTY = "@WM_TITAN2_OPTION_TEMP_20_W"
+    THIRTY = "@WM_TITAN2_OPTION_TEMP_30_W"
+    FOURTY = "@WM_TITAN2_OPTION_TEMP_40_W"
+    SIXTY = "@WM_TITAN2_OPTION_TEMP_60_W"
+    NINTYFIVE = "@WM_TITAN2_OPTION_TEMP_95_W"
 
 class WASHERSPINSPEED(enum.Enum):
     
-    NO_SELECT = "@WM_TERM_NO_SELECT_W"
-    EXTRA_LOW = "@WM_KR_TT27_WD_WIFI_OPTION_SPINSPEED_EXTRA_LOW_W"
-    LOW = "@WM_KR_TT27_WD_WIFI_OPTION_SPINSPEED_LOW_W"
-    MEDIUM = "@WM_KR_TT27_WD_WIFI_OPTION_SPINSPEED_MEDIUM_W"
-    HIGH = "@WM_KR_TT27_WD_WIFI_OPTION_SPINSPEED_HIGH_W"
-    EXTRA_HIGH = "@WM_KR_TT27_WD_WIFI_OPTION_SPINSPEED_EXTRA_HIGH_W"
+    NOSPIN = "@WM_TITAN2_OPTION_SPIN_NO_SPIN_W"
+    SPIN_400 = "@WM_TITAN2_OPTION_SPIN_400_W"
+    SPIN_800 = "@WM_TITAN2_OPTION_SPIN_800_W"
+    SPIN_1000 = "@WM_TITAN2_OPTION_SPIN_1000_W"
+    SPIN_1200 = "@WM_TITAN2_OPTION_SPIN_1200_W"
+    SPIN_1400 = "@WM_TITAN2_OPTION_SPIN_1400_W"
+
+    #NO_SELECT = "@WM_TERM_NO_SELECT_W"
+    #EXTRA_LOW = "@WM_KR_TT27_WD_WIFI_OPTION_SPINSPEED_EXTRA_LOW_W"
+    #LOW = "@WM_KR_TT27_WD_WIFI_OPTION_SPINSPEED_LOW_W"
+    #MEDIUM = "@WM_KR_TT27_WD_WIFI_OPTION_SPINSPEED_MEDIUM_W"
+    #HIGH = "@WM_KR_TT27_WD_WIFI_OPTION_SPINSPEED_HIGH_W"
+    #EXTRA_HIGH = "@WM_KR_TT27_WD_WIFI_OPTION_SPINSPEED_EXTRA_HIGH_W"
+
+class WASHERRINSEOPTION(enum.Enum):
+    
+    NORMAL = "@WM_TITAN2_OPTION_RINSE_NORMAL_W"
+    EXTRA_RINSE = "@WM_TITAN2_OPTION_RINSE_RINSE+_W"
 
 class WASHERRINSECOUNT(enum.Enum):
     
@@ -2479,11 +2509,12 @@ class WasherStatus(object):
 
     @property
     def current_course(self):
-        course = self.lookup_reference('APCourse')
-        if course == '-':
-            return 'OFF'
-        else:
-            return course
+        return 'OFF'
+        #course = self.lookup_reference('APCourse')
+        #if course == '-':
+        #    return 'OFF'
+        #else:
+        #    return course
 
     @property
     def error_state(self):
@@ -2497,10 +2528,11 @@ class WasherStatus(object):
 
     @property
     def wash_option_state(self):
-        soillevel = self.lookup_enum('SoilLevel')
-        if soillevel == '-':
-            return 'OFF'
-        return WASHERSOILLEVEL(soillevel)
+        return 'OFF'
+        #soillevel = self.lookup_enum('SoilLevel')
+        #if soillevel == '-':
+        #    return 'OFF'
+        #return WASHERSOILLEVEL(soillevel)
     
     @property
     def spin_option_state(self):
@@ -2517,11 +2549,19 @@ class WasherStatus(object):
         return WASHERWATERTEMP(water_temp)
 
     @property
-    def rinsecount_option_state(self):
-        rinsecount = self.lookup_enum('RinseCount')
-        if rinsecount == '-':
+    def rinse_option_state(self):
+        rinse_option = self.lookup_enum('RinseOption')
+        if rinse_option == '-':
             return 'OFF'
-        return WASHERRINSECOUNT(rinsecount)
+        return WASHERRINSEOPTION(rinse_option)
+    
+    @property
+    def rinsecount_option_state(self):
+        return 'OFF'
+        #rinsecount = self.lookup_enum('RinseCount')
+        #if rinsecount == '-':
+        #    return 'OFF'
+        #return WASHERRINSECOUNT(rinsecount)
 
     @property
     def drylevel_option_state(self):
@@ -2560,7 +2600,8 @@ class WasherStatus(object):
 
     @property
     def load_level(self):
-        return self.lookup_enum('LoadLevel')
+        return 'OFF'
+        #return self.lookup_enum('LoadLevel')
 
 
 """------------------for Dehumidifier"""
