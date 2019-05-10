@@ -2509,12 +2509,11 @@ class WasherStatus(object):
 
     @property
     def current_course(self):
-        return 'OFF'
-        #course = self.lookup_reference('APCourse')
-        #if course == '-':
-        #    return 'OFF'
-        #else:
-        #    return course
+        course = self.lookup_reference('APCourse')
+        if course == '-':
+            return 'OFF'
+        else:
+            return course
 
     @property
     def error_state(self):
